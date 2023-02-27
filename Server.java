@@ -4,6 +4,7 @@ import java.net.SocketException;
 import java.io.IOException;
 import java.net.DatagramPacket;
 
+
 public class Server {
     public static void main(String[] args){
         try{
@@ -11,6 +12,7 @@ public class Server {
         byte [] receiveData = new byte[1024];
         byte [] sendData = new byte[1024];
 
+        
         while(true){
             try{
             DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);
